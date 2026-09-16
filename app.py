@@ -68,7 +68,7 @@ selected_segments = st.sidebar.multiselect(
 )
 
 age_min, age_max = int(df["Age"].min()), int(df["Age"].max())
-income_min, income_max = int(df["Annual Income (k$)").min(), int(df["Annual Income (k$)").max())
+income_min, income_max = int(df["Annual Income (k$)"].min()), int(df["Annual Income (k$)"].max())
 
 age_range = st.sidebar.slider(
     "Age range",
