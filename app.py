@@ -87,7 +87,7 @@ income_range = st.sidebar.slider(
 mask = (
     df["Segment"].isin(selected_segments) &
     df["Age"].between(age_range[0], age_range[1]) &
-    df["Annual Income (k$)").between(income_range[0], income_range[1])
+    df["Annual Income (k$)"].between(income_range[0], income_range[1])
 )
 df_filt = df[mask].copy()
 
